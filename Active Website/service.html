@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="service.css">
+
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="animation.css">
+
+    <!-- Bs-Css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bs-Javascript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Bs-Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/favicon.jpg">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- J-Query CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Swiper's CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Wow Js Animation CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Wow min Js Animation CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="row">
+        <div class="navbar navbar-fixed navbar-expand-lg col-12 pt-3 pb-3 bg-light wow animate__animated animate__fadeIn animation_duration 0.9s"
+            style="box-shadow: 0px 10px 10px rgba(0,0,0,0.1);" id="navbar">
+
+            <div class="container">
+
+                <a href="home.html" class="navbar-brand" style="font-size: 35px;">Active.</a>
+                <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#modal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="home.html">Home</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="about.html">About</a></li>
+                                        <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="team.html">Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-0"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Nested Dropdown -->
+            <script>
+                document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
+                    submenu.addEventListener('mouseenter', function (e) {
+                        const dropdownMenu = submenu.querySelector('.dropdown-menu');
+                        dropdownMenu.style.display = 'block';
+                    });
+                    submenu.addEventListener('mouseleave', function (e) {
+                        const dropdownMenu = submenu.querySelector('.dropdown-menu');
+                        dropdownMenu.style.display = 'none';
+                    });
+                });
+            </script>
+
+            <!-- Fixed Navbar -->
+            <script>
+                $(document).ready(function () {
+                    var navbar = $("#navbar");
+                    var body = $("body");
+
+                    // Store the initial position of the navbar
+                    var navbarOffset = navbar.offset().top;
+                    var container = $(".container");  // Reference to the container div
+
+                    $(window).scroll(function () {
+                        // If scroll position is greater than navbar's initial offset
+                        if ($(this).scrollTop() > navbarOffset) {
+                            navbar.css({
+                                'position': 'fixed',
+                                'top': '0',
+                                'left': '0',
+                                'right': '0',
+                                'width': '100%',
+                                'box-shadow': '0px 10px 10px rgba(0,0,0,0.1)',
+                                'z-index': '1000',
+                                'margin-left': '0',
+                                'margin-right': '0',
+                                'padding-left': '0',
+                                'padding-right': '0'
+                            });
+                            container.css('margin-top', '0');  // Remove top margin from container
+                        } else {
+                            navbar.css({
+                                'position': 'static',
+                                'box-shadow': 'none',
+                            });
+                            container.css('margin-top', '0px');  // Reset container margin when navbar is static
+                        }
+                    });
+                });
+            </script>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="row">
+        <div class="container col-12">
+            <div class="modal" tabindex="-1" id="modal" style="position: absolute;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p style="margin-top: 18px; font-size: 36px;">Active.</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="navbar-nav w-100 d-flex justify-content-end">
+                                <li class="nav-item"><a href="home.html"
+                                        class="nav-link text-success text-center">Home</a></li>
+                                <li class="nav-item"><a href="about.html" class="nav-link text-center">About</a></li>
+                                <li class="nav-item"><a href="service.html" class="nav-link text-center">Services</a>
+                                </li>
+                                <li class="nav-item"><a href="portfolio.html" class="nav-link text-center">Portfolio</a>
+                                </li>
+                                <li class="nav-item"><a href="team.html" class="nav-link text-center">Team</a></li>
+                                <li class="nav-item"><a href="blog.html" class="nav-link text-center">Blog</a></li>
+
+                                <li class="nav-item dropdown-center">
+                                    <a class="nav-link dropdown-toggle text-center" href="#" role="button"
+                                        data-bs-toggle="dropdown">
+                                        Dropdown</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item " href="#">Dropdown 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link text-center">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub Content -->
+    <div class="row">
+        <div class="container-fluid p-0" style="background-color: #d5d8d8; padding-top: 50px;">
+
+            <div class="container pt-3 pb-3 wow animate__animated animate__fadeIn">
+                <p style="font-size: 25px; color: #2D465E;">About</p>
+                <a href="home.html" style="text-decoration: none; color: green;">
+                    <p>Home
+                </a> / <a href="service.css" style="text-decoration: none; color: grey;"><span>Service</span></a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Our Service -->
+    <div class="row">
+        <div class="container-fluid bg-light pt-5 pb-5 pe-0 ps-0">
+            <div class="container col-12">
+
+                <div class="row justify-content-between" style="width: 90%; margin: auto;">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 wow animate__animated animate__fadeInUp">
+                        <p>Our Services</p>
+
+                        <p style="color: #2D465E; font-weight: bold; font-size: 20px;">
+                            Far far away, behind the word mountains, far from the countries Vokalia
+                        </p>
+
+                        <p>
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live
+                            the blind texts.
+                        </p>
+
+                        <p>
+                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                            ocean.
+                        </p>
+
+                        <button class="btn rounded rounded-pill"
+                            style="background-color: #34BF49; width: 150px; color: white;">Get Started</button>
+                    </div>
+
+                    <div
+                        class="col-12 col-sm-12 col-md-7 col-lg-7 d-flex flex-wrap service wow animate__animated animate__fadeInUp">
+
+                        <div class="col-6">
+                            <i class="bi bi-search" style="font-size: 60px; color: green;"></i><br><br>
+
+                            <p style="font-size: 20px;  margin-top: -30px;">Square</p>
+                            <p style="margin-top: -5px; width: 75%;">Separated they live in Bookmarksgrove right at the
+                                coast
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <i class="bi bi-command" style="font-size: 60px; color: green;"></i><br><br>
+
+                            <p style="font-size: 20px;  margin-top: -30px;">Technology</p>
+                            <p style="margin-top: -5px; width: 75%;">Separated they live in Bookmarksgrove right at the
+                                coast
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <i class="bi bi-grid" style="font-size: 60px; color: green;"></i><br><br>
+
+                            <p style="font-size: 20px;  margin-top: -30px;">Brilliant Ideas</p>
+                            <p style="margin-top: -5px; width: 75%;">Separated they live in Bookmarksgrove right at the
+                                coast
+                            </p>
+                        </div>
+
+                        <div class="col-6">
+                            <i class="bi bi-globe" style="font-size: 60px; color: green;"></i><br><br>
+
+                            <p style="font-size: 20px;  margin-top: -30px;">Blueprint</p>
+                            <p style="margin-top: -5px; width: 75%;">Separated they live in Bookmarksgrove right at the
+                                coast
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 Icons -->`
+    <div class="row" style="border-bottom: 1px solid rgba(128, 128, 128, 0.336);">
+        <div class="container-fluid pt-5 pb-5" style="background-color: #F3F4F4; margin-top: -3%;">
+            <div class="container d-flex justify-content-center col-12" style="background-color: #F3F4F4;">
+                <div
+                    class="mid-block d-inline-flex justify-content-between flex-wrap col-12 col-sm-12 col-md-12 col-lg-8">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 one-icon wow animate__animated animate__fadeInUp">
+                        <i class="bi bi-bullseye" style="font-size: 80px; color: #34BF49;"></i>
+
+                        <p style="font-size: 20px;">Technology</p>
+                        <p>
+                            Separated they live in Bookmarksgrove right at the coast
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 two-icon wow animate__animated animate__fadeInUp">
+                        <i class="bi bi-command" style="font-size: 80px; color: #34BF49;"></i>
+
+                        <p style="font-size: 20px;">Web Design</p>
+                        <p>
+                            Separated they live in Bookmarksgrove right at the coast
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 three-icon wow animate__animated animate__fadeInUp">
+                        <i class="bi bi-bar-chart" style="font-size: 80px; color: #34BF49;"></i>
+
+                        <p style="font-size: 20px;">Branding</p>
+                        <p>
+                            Separated they live in Bookmarksgrove right at the coast
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+
+        <div class="container-fluid p-0" style="background-color: #F3F4F4;">
+
+            <div class="container col-12 d-flex flex-wrap justify-content-between pt-5 pb-5">
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-2 mb-sm-3 pt-5 pb-5 ">
+                    <p style="color: #2D465E; font-size: 20px; cursor: pointer;">About us</p>
+
+                    <p>
+                        There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                        Semantics,
+                        a large language ocean.
+                    </p>
+
+                    <button class="btn btn-success w-50 rounded rounded-pill">Learn more</button>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-2 mb-sm-3 pt-5 pb-5 ">
+                    <p style="color: #2D465E; font-size: 20px;">Navigation</p>
+
+                    <div class="parts d-flex justify-content-between" style="width: 80%;">
+                        <div class="one">
+                            <p>Overview</p>
+                            <p>About Us</p>
+                            <p>Find Buyers</p>
+                        </div>
+                        <div class="two">
+                            <p>Overview</p>
+                            <p>About Us</p>
+                            <p>Services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-2 mb-sm-3 pt-5 pb-5 ">
+                    <p style="color: #2D465E; font-size: 20px;">Recent Posts</p>
+
+                    <p style="color: grey; font-size: 10px;">May 3, 2020</p>
+                    <p>There live the Blind Texts</p>
+
+                    <p style="color: grey; font-size: 10px;">May 3, 2020</p>
+                    <p>Separated they live in Bookmarksgrove right</p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-lg-2 mb-sm-3 pt-5 pb-5 ">
+                    <p style="color: #2D465E; font-size: 20px; cursor: pointer;">Connect</p>
+
+                    <div class="apps col-5 d-flex justify-content-between">
+
+                        <div class="facebook" style="background-color: #DDDFDF; padding: 10px; border-radius: 50%;">
+                            <i class="bi bi-facebook" style="cursor: pointer;"></i>
+                        </div>
+
+                        <div class="facebook" style="background-color: #DDDFDF; padding: 10px; border-radius: 50%;">
+                            <i class="bi bi-twitter-x" style="cursor: pointer;"></i>
+                        </div>
+
+                        <div class="facebook" style="background-color: #DDDFDF; padding: 10px; border-radius: 50%;">
+                            <i class="bi bi-linkedin" style="cursor: pointer;"></i>
+                        </div>
+
+                        <div class="facebook" style="background-color: #DDDFDF; padding: 10px; border-radius: 50%;">
+                            <i class="bi bi-google" style="cursor: pointer;"></i>
+                        </div>
+
+                        <div class="facebook" style="background-color: #DDDFDF; padding: 10px; border-radius: 50%;">
+                            <i class="bi bi-google-play" style="cursor: pointer;"></i>
+                        </div>
+
+                    </div>
+
+                    <p style="color: #2D465E; font-size: 20px; cursor: pointer;" class="mt-5">Subscribe</p>
+                    <div
+                        style="background-color: white; height: 50px; padding: 5px; border-radius: 10px; border: 1px solid black;">
+                        <input type="text"
+                            style="height: 40px; border: none; border-radius: 10px; width: 100%; outline: none;"
+                            placeholder="E-mail / Mobile No.">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <hr>
+                <div class="last d-flex flex-wrap justify-content-between">
+                    <p class="col-12 col-sm-12 col-md-6 col-6" style="cursor: pointer;">© Copyright <b>Active.</b> All
+                        Rights Reserved</p>
+                    <p class="col-12 col-sm-12 col-md-6 col-6 text-end" style="cursor: pointer;">Designed by <b
+                            style="text-decoration: underline;">Rohit Pakhre</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Wow Js -->
+    <script>
+        new WOW().init();
+    </script>
+    </div>
+
+</body>
+
+</html>
