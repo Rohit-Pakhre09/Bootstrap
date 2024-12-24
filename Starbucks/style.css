@@ -1,0 +1,123 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    height: 50px;
+    width: 69%;
+    margin: auto; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-one {
+    display: flex;
+    align-items: center;
+}
+
+.content-two {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    float: right;
+    margin: 0%;
+}
+
+.menu ul li {
+    float: left;
+    margin-right: 60px;
+    font-weight: 400;
+}
+
+.menu ul li::after {
+    display: block;
+    content: "";
+    margin: auto;
+    border-bottom: 1px solid green;
+    margin-top: 5px;
+    width: 0%;
+    transition: 0.3s all ease-in-out;
+}
+
+.menu ul li:hover::after {
+    width: 100%;
+}
+
+#input {
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-two img {
+    margin-left: 100px;
+}
+
+.full-width {
+    height: 90px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #1E3730;
+    display: flex;
+    align-items: center;
+}
+
+#img img:hover {
+    border: 2px solid green;
+}
+
+.image-two  {
+    height: 450px;
+    width: 100%;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) , url("Images/image2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.up-content ul li {
+    cursor: pointer;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.image-two:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) , url("Images/image2.jpg");
+}
+
+.input-with-image {
+    background-image: url('Images/search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 0px;
+}

@@ -1,0 +1,277 @@
+/* Extra-Large-Screen */
+@media (max-width:1500px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-content {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-one {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .content-two {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #input {
+        width: 220px;
+        margin-top: 10px;
+    }
+
+    .content-two img {
+        margin-left: 0px;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 15px;
+    }
+}
+
+/* Large-Screen */
+@media (max-width:1200px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-content {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-one {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+
+    .menu ul li {
+        text-align: center;
+    }
+
+    .content-two {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #input {
+        width: 110px;
+        margin-top: 10px;
+    }
+
+    .content-two img {
+        margin-left: 0px;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 15px;
+    }
+}
+
+/* Laptop-Screen */
+@media (max-width:1024px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-content {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-one {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        margin-top: 15px;
+    }
+
+    .menu ul li {
+        margin: 30px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    .content-two {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #input {
+        width: 270px;
+        margin-top: 10px;
+    }
+
+    .content-two img {
+        margin-left: 15px;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 15px;
+    }
+
+    .conatiner-fluid {
+        width: auto;
+    }
+}
+
+/* Tablet-Screen */
+@media (max-width:768px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-content {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-one {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        margin: 15px auto;
+    }
+
+    .menu ul li {
+        margin: 30px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+
+    .content-two {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #input {
+        width: 270px;
+        margin-top: 10px;
+    }
+
+    .content-two img {
+        margin-left: 15px;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 15px;
+    }
+}
+
+/* Mobile-Screen */
+@media (max-width:480px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-content {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-one {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin: 0%;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 15px;
+        margin: 15px auto;
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 0%;
+    }
+
+    .content-two {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #input {
+        width: 160px;
+        margin-top: 10px;
+    }
+
+    .content-two img {
+        margin-left: 15px;
+    }
+
+    .card {
+        width: 40%;
+        margin-left: 15px;
+    }
+}
