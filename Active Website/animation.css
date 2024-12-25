@@ -1,0 +1,96 @@
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+    --animation-delay: 0.1s;
+}
+
+.mission {
+    --animate-duration: 2s;
+}
+
+.mission2 {
+    --animate-duration: 2s;
+}
+
+.one-icon {
+    --animate-duration: 1.5s;
+}
+
+.two-icon {
+    --animate-duration: 2s;
+}
+
+.three-icon {
+    --animate-duration: 2.5s;
+}
+
+.counter1 {
+    --animate-duration: 2s;
+}
+
+.counter2 {
+    --animate-duration: 2.5s;
+}
+
+.counter3 {
+    --animate-duration: 3s;
+}
+
+.blog-post1 {
+    --animate-duration: 1s;
+}
+
+.blog-post2 {
+    --animate-duration: 1.5s;
+}
+
+.blog-post3 {
+    --animate-duration: 2s;
+}
+
+.vt-1 {
+    --animate-duration: 1s;
+}
+
+.vt-2 {
+    --animate-duration: 1.5s;
+}
+
+.vt-3 {
+    --animate-duration: 2s;
+}
+
+.vt-4 {
+    --animate-duration: 2.8s;
+}
+
+.service {
+    --animate-duration: 1.5s;
+}
+
+.price-1 {
+    --animate-duration: 1.2s;
+}
+
+.price-2 {
+    --animate-duration: 1.5s;
+}
+
+.price-3 {
+    --animate-duration: 2s;
+}
+
+.faq-1 {
+    --animate-duration: 2.5s;
+}
+
+.accordion {
+    --animate-duration: 2.5s;
+}
+
+.testimonial {
+    --animate-duration: 0.9s;
+}
+
+.swip {
+    --animate-duration: 1.5s;
+}
