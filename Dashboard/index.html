@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Remix Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon Link -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=Dpf3LN09tCqQ&format=png&color=000000">
+
+    <!-- WOW Js Animate CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- J-Query CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Chart CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+        integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper's CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Left Content -->
+        <div id="aside">
+
+            <div class="icon-image">
+                <img src="Assets/logo_icon.png" alt="" height="59px">
+            </div>
+
+            <!-- General -->
+            <div id="general" style="display: none; background-color: #214162">
+                <img src="Assets/pfp.jpg" alt="" height="110px" style="border-radius: 50%; padding: 15px; float: left;">
+
+                <p style="margin-top: 7%; font-size: 25px; color: white;">John David</p>
+                <p style="margin-top: -5%; color: green; font-size: 15px; font-weight: bold; cursor: pointer;"><i
+                        class="ri-checkbox-blank-circle-fill animate__animated animate__flash animate__infinite	infinite animate__slower	3s"></i>
+                    Online</p>
+            </div>
+            <div id="another-hide" style="display: none;">
+                <p style="color: white; margin-left: 10px; margin-top: 10px; margin-bottom: 5px; font-size: 25px;">
+                    General</p>
+                <div class="line"></div>
+            </div>
+
+            <!-- Column Icons -->
+            <div class="icons">
+
+                <div class="inner-content">
+
+                    <!-- Icon-1 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column; margin-top: 5%; align-items: self-start; justify-content: center; ">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-speedometer2" style="font-size: 30px; cursor: pointer; color: #FF9800;"
+                                style="margin: auto;" data-bs-toggle="collapse" data-bs-target="#dash"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none; color: white;"
+                                id="right-icon1" data-bs-toggle="collapse" data-bs-target="#dash">DashBoard<i
+                                    class="bi bi-caret-down-fill" style="margin-left: 5px;"></i>
+                            </p>
+                        </div>
+
+                        <div class="collapse" id="dash" style="width: 100%;">
+                            <div class="card card-body w-100"
+                                style="background-color: #214162; color: white; border: none; border-radius: 0%;">
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer;" id="p1"><i
+                                        class="bi bi-chevron-right"></i> Default DashBoard</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer;" id="p2"><i
+                                        class="bi bi-chevron-right"></i> Default DashBoard 2</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-2 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-clock-history" style="font-size: 30px; cursor: pointer; color: #FF5722;"
+                                style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon2">Widgets</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-3-->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-gem" style="font-size: 30px; cursor: pointer; color: #673AB7;"
+                                style="margin: auto;" data-bs-toggle="collapse" data-bs-target="#elements"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon3" data-bs-toggle="collapse" data-bs-target="#elements">Elements<i
+                                    class="bi bi-caret-down-fill" style="margin-left: 5px;"></i>
+                            </p>
+                        </div>
+
+                        <div class="collapse" id="elements" style="width: 100%;">
+                            <div class="card card-body w-100"
+                                style="background-color: #214162; color: white; border: none; border-radius: 0%;">
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer;" id="p3"><i
+                                        class="bi bi-chevron-right"></i> General Elements</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p4"><i
+                                        class="bi bi-chevron-right"></i> Media Gallery</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p5"><i
+                                        class="bi bi-chevron-right"></i> Icons</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p6"><i
+                                        class="bi bi-chevron-right"></i> Invoice</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-4 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-table" style="font-size: 30px; cursor: pointer; color: #9C27B0;"
+                                style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon4">Tables</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-5-->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-window-stack" style="font-size: 30px; cursor: pointer; color: #03A9F4;"
+                                style="margin: auto;" data-bs-toggle="collapse" data-bs-target="#apps"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon5" data-bs-toggle="collapse" data-bs-target="#apps">Apps<i
+                                    class="bi bi-caret-down-fill" style="margin-left: 5px;"></i>
+                            </p>
+                        </div>
+
+                        <div class="collapse" id="apps" style="width: 100%;">
+                            <div class="card card-body w-100"
+                                style="background-color: #214162; color: white; border: none; border-radius: 0%;">
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p7"><i
+                                        class="bi bi-chevron-right"></i> Email</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p8"><i
+                                        class="bi bi-chevron-right"></i> Calendar</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p9"><i
+                                        class="bi bi-chevron-right"></i> Media Gallery</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-6 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-briefcase-fill" style="font-size: 30px; cursor: pointer; color: #03A9F4;"
+                                style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon6">Pricing Tables</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-7 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-send" style="font-size: 30px; cursor: pointer; color: #E91E63;"
+                                style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon7">Contact</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-8 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-layers-fill" style="font-size: 30px; cursor: pointer; color: #FF9800;"
+                                style="margin: auto;" data-bs-toggle="collapse" data-bs-target="#add"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon8" data-bs-toggle="collapse" data-bs-target="#add">Additional Pages<i
+                                    class="bi bi-caret-down-fill" style="margin-left: 5px;"></i>
+                            </p>
+                        </div>
+
+                        <div class="collapse" id="add" style="width: 100%;">
+                            <div class="card card-body w-100"
+                                style="background-color: #214162; color: white; border: none; border-radius: 0%;">
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p10"><i
+                                        class="bi bi-chevron-right"></i> Profile</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p11"><i
+                                        class="bi bi-chevron-right"></i> Projects</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p12"><i
+                                        class="bi bi-chevron-right"></i> Login</p>
+                                <p style="font-size: 12px; padding-left: 40px; cursor: pointer" id="p13"><i
+                                        class="bi bi-chevron-right"></i> Error 404</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-9 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-map" style="font-size: 30px; cursor: pointer; color: #9C27B0;"
+                                style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon9">Maps</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-10 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-graph-up-arrow" style="font-size: 30px; cursor: pointer; color: #009688;"
+                                style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon10">Charts</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Icon-11 -->
+                    <div class="icon-content"
+                        style="display: flex; flex-direction: column;  flex-direction: column; align-items: self-start; justify-content: center; margin-top: 10px; color: white;">
+
+                        <div class="d-flex gap-4 justify-content-center"
+                            style="padding-left: 40px; padding-right: 10px;">
+                            <i class="bi bi-gear-wide-connected"
+                                style="font-size: 30px; cursor: pointer; color: #FF9800;" style="margin: auto;"></i>
+                            <p style="cursor: pointer; margin-top: 10px; font-size: 15px; display: none;"
+                                id="right-icon11">Settings</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Content -->
+        <div class="main">
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <!-- Navbar -->
+                    <div class="nav d-flex justify-content-between p-0" style="height: 60px; width: 100%;">
+
+                        <div class="col-10" id="nav-first" style="background-color: #15283C;">
+                            <div class="nav-content d-flex justify-content-between">
+                                <div class="first">
+                                    <div class="btn btn-toggler" id="btn"
+                                        style="height: 60px; width: 55px; background-color: #FF5722; border-radius: 0%;">
+                                        <span class="btn-toggler-icon"
+                                            style="font-size: 25px; color: white; line-height: 45px;">
+                                            <i class="ri-menu-line"></i>
+                                        </span>
+                                    </div>
+
+                                    <img src="Assets/logo.png" alt="" height="50px"
+                                        style="padding-left: 15px; padding-top: 0px;">
+                                </div>
+
+                                <div class="last d-flex align-items-center" id="icon">
+                                    <i class="bi bi-bell position-relative"
+                                        style="font-size: 25px; color: white; margin-left: 20px; cursor: pointer;">
+                                        <span
+                                            class="position-absolute top-1 start-100 translate-middle badge rounded-pill"
+                                            style="font-size: 10px; background-color: #FF5722;">2</span>
+                                    </i>
+                                    <i class="bi bi-question-circle-fill"
+                                        style="font-size: 25px; color: white; margin-left: 20px; cursor: pointer;"></i>
+                                    <i class="bi bi-envelope position-relative"
+                                        style="font-size: 25px; color: white; margin-left: 20px; margin-right: 20px; cursor: pointer;">
+                                        <span
+                                            class="position-absolute top-1 start-100 translate-middle badge rounded-pill"
+                                            style="font-size: 10px; background-color: #FF5722;">2</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2 navbar-expand-lg" id="nav-end" style="background-color: #FF5722;">
+
+                            <div
+                                style="background-color: #FF5722; width: 90%; height: 60px; display: flex; align-items: center; justify-content: center; margin: auto;">
+
+                                <div class="image_dropdown" data-bs-toggle="dropdown" style="flex-wrap: nowrap;">
+                                    <img src="Assets/pfp.jpg" alt=""
+                                        style="height: 50px; width: 50px; border-radius: 50%; margin-right: 10px; cursor: pointer;">
+
+                                    <Span style="font-weight: bold; font-size: 17px; color: white;cursor: pointer;">John
+                                        David
+                                        <i class="ri-arrow-drop-down-line"
+                                            style="cursor: pointer; padding-bottom: 15px;">
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" id="drop" href="#">My Profile</a></li>
+                                                <li><a class="dropdown-item" id="drop" href="#">Settings</a></li>
+                                                <li><a class="dropdown-item" id="drop" href="#">Help</a></li>
+                                                <li><a class="dropdown-item" id="drop" href="#">Log out <i
+                                                            class="bi bi-box-arrow-right"></i></a></li>
+                                            </ul>
+                                        </i>
+                                    </Span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Dashboard -->
+                    <div class="container-fluid pt-3 pb-1 ps-4 bg-light"
+                        style="box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);">
+                        <p style="font-size: 25px; ">DashBoard</p>
+                    </div>
+
+                    <!-- Container Content -->
+                    <div class="container-fluid bg-light mt-3">
+
+                        <div class="row">
+
+                            <!-- Column-1 -->
+                            <div class="column1 ps-3 d-flex flex-wrap" style="object-fit: cover;">
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+                                        <div
+                                            style="display: flex; justify-content: space-around; background-color: white; height: 120px; box-shadow: 0px 2px 2px  rgba(0,0,0,0.2); align-items: center; border-radius: 20px;">
+                                            <i class="bi bi-person-fill" style="font-size: 50px; color: #FF9800;"></i>
+                                            <p class="text-end" style="font-size: 19px;">2500 <br><span
+                                                    style="color: gray; font-style: normal;">WELCOME</span></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+
+                                        <div
+                                            style="display: flex; justify-content: space-around; background-color: white; height: 120px; box-shadow: 0px 2px 2px  rgba(0,0,0,0.2); align-items: center; border-radius: 20px;">
+                                            <i class="bi bi-clock" style="font-size: 50px; color: #2196F3;"></i>
+                                            <p class="text-end" style="font-size: 19px;">123.50 <br><span
+                                                    style="color: gray; font-style: normal;">AVERAGE TIME</span></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+
+                                        <div
+                                            style="display: flex; justify-content: space-around; background-color: white; height: 120px; box-shadow: 0px 2px 2px  rgba(0,0,0,0.2); align-items: center; border-radius: 20px;">
+                                            <i class="bi bi-cloud-arrow-down-fill"
+                                                style="font-size: 50px; color: #009688;"></i>
+                                            <p class="text-end" style="font-size: 19px;">1,805 <br><span
+                                                    style="color: gray; font-style: normal;">COLLECTIONS</span></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+
+                                        <div
+                                            style="display: flex; justify-content: space-around; background-color: white; height: 120px; box-shadow: 0px 2px 2px  rgba(0,0,0,0.2); align-items: center; border-radius: 20px;">
+                                            <i class="bi bi-chat-quote" style="font-size: 50px; color: #E81E63;"></i>
+                                            <p class="text-end" style="font-size: 19px;">54 <br><span
+                                                    style="color: gray; font-style: normal;">COMMENTS</span></p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Column-2 -->
+                            <div class="column2 ps-3 mt-3 d-flex flex-wrap">
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+                                        <div class="card" style="border-radius: 20px; height: 190px;">
+                                            <i class="bi bi-facebook"
+                                                style="background-color: #3B5998; color: white;  border-radius: 20px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; width: 100%; justify-content: center; display: flex; font-size: 70px; padding: 10px;"></i>
+                                            <div class="card-body"
+                                                style="display: flex; justify-content: space-around;">
+                                                <p class="card-text">
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    35K <br>
+                                                    <span style="color: grey;">Friends</span>
+                                                </p>
+
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    128<br>
+                                                    <span style="color: grey;">Friends</span>
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+                                        <div class="card" style="border-radius: 20px; height: 190px;">
+                                            <i class="bi bi-twitter"
+                                                style="background-color: #00ACED; color: white;  border-radius: 20px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; width: 100%; justify-content: center; display: flex; font-size: 70px; padding: 10px;"></i>
+                                            <div class="card-body"
+                                                style="display: flex; justify-content: space-around;">
+                                                <p class="card-text">
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    584K <br>
+                                                    <span style="color: grey;">Followers</span>
+                                                </p>
+
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    978 <br>
+                                                    <span style="color: grey;">Tweets</span>
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+                                        <div class="card" style="border-radius: 20px; height: 190px;">
+                                            <i class="bi bi-linkedin"
+                                                style="background-color: #0077B5; color: white;  border-radius: 20px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; width: 100%; justify-content: center; display: flex; font-size: 70px; padding: 10px;"></i>
+                                            <div class="card-body"
+                                                style="display: flex; justify-content: space-around;">
+                                                <p class="card-text">
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    578+ <br>
+                                                    <span style="color: grey;">Contacts</span>
+                                                </p>
+
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    365 <br>
+                                                    <span style="color: grey;">Feeds</span>
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex">
+
+                                    <div class="col-12 p-2">
+                                        <div class="card" style="border-radius: 20px; height: 190px;">
+                                            <i class="bi bi-google"
+                                                style="background-color: #D34836; color: white;  border-radius: 20px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; width: 100%; justify-content: center; display: flex; font-size: 70px; padding: 10px;"></i>
+                                            <div class="card-body"
+                                                style="display: flex; justify-content: space-around;">
+                                                <p class="card-text">
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    450 <br>
+                                                    <span style="color: grey; font-style: normal;">Followers</span>
+                                                </p>
+
+                                                <p style="font-size: 20px; text-align: center; font-weight: bold;">
+                                                    57 <br>
+                                                    <span style="color: grey;">Circles</span>
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Chart -->
+                            <div class="chart ps-4 pt-3 mt-3" style="border-radius: 20px;">
+
+                                <div class="pt-3 ps-3 pe-3"
+                                    style="box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); border-radius: 20px; width: 99.5%;">
+                                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Extra Area
+                                        Chart
+                                    </p>
+                                    <hr>
+
+                                    <!-- Chart Data -->
+                                    <canvas id="myChart" height="150" style="padding: 20px;"></canvas>
+
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                    <script>
+
+                                        const data = {
+                                            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                                            datasets: [{
+                                                label: 'Dataset 1',
+                                                backgroundColor: [
+                                                    '#FF9800',
+                                                    '#2196F3',
+                                                    '#FF5722',
+                                                    '#009688',
+                                                    '#FF9800',
+                                                    '#15283C',
+                                                    '#009688'
+                                                ],
+                                                borderColor: 'rgba(0,0,0,0)',
+                                                borderWidth: 1,
+                                                data: [15, -96, 91, -41, -75, 89, 8],
+                                            },
+                                            {
+                                                label: 'Dataset 2',
+                                                data: [13, 47, 46, 50, 49, -45, -79],
+                                                fill: true,
+                                                backgroundColor: 'rgba(187, 241, 218, 0.6)',
+                                                borderColor: '#1ED085',
+                                                tension: 0.1,
+                                                type: 'line'
+                                            },
+                                            {
+                                                label: 'Dataset 3',
+                                                backgroundColor: [
+                                                    '#FF5722',
+                                                    '#5167A8',
+                                                    '#E91E63',
+                                                    '#009688',
+                                                    '#FF9800',
+                                                    '#15283C',
+                                                    '#009688'
+                                                ],
+                                                borderColor: 'rgba(0,0,0,0)',
+                                                borderWidth: 1,
+                                                data: [-22, 19, -93, -82, -78, 93, -48],
+                                            }
+                                            ]
+                                        };
+
+                                        const config = {
+                                            type: 'bar',
+                                            data: data,
+                                            options: {
+                                                responsive: true,
+                                                plugins: {
+                                                    legend: {
+                                                        position: 'top',
+                                                    }
+                                                }
+                                            },
+                                        };
+
+                                        const ctx = document.getElementById('myChart').getContext('2d');
+                                        const myChart = new Chart(ctx, config); 
+                                    </script>
+                                </div>
+
+                            </div>
+
+                            <!-- Testimonial & Progress Bar -->
+                            <div>
+
+                                <div class="division">
+
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pe-2">
+
+                                        <div class="testimonial1 col-12 ps-4 pt-3">
+
+                                            <p style="color: white; font-size: 25px;">Testimonial</p>
+                                            <hr>
+
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide d-flex justify-content-center"
+                                                        style="flex-direction: column;">
+
+                                                        <div
+                                                            style="height: 150px; width: 150px; display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+                                                            <img src="Assets/pfp.jpg" style="border-radius: 50%;">
+                                                        </div>
+
+                                                        <p
+                                                            style="font-size: 12px; text-align: center; width: 70%; color: white; margin-top: -10px;">
+                                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                                            voluptatem accusantium doloremque laudantium, totam rem
+                                                            aperiam, eaque ipsa quae.
+                                                        </p>
+
+                                                        <span
+                                                            style="font-size: 15px; font-weight: bold; color: white; margin-top: -10px;">Michael
+                                                            Stuart</span>
+                                                        <span
+                                                            style="font-size: 13px; font-weight: bold; padding-bottom: 20px; color: #1ED085;">Seo
+                                                            Founder</span>
+
+                                                    </div>
+
+                                                    <div class="swiper-slide d-flex justify-content-center"
+                                                        style="flex-direction: column;">
+
+                                                        <div
+                                                            style="height: 150px; width: 150px; display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+                                                            <img src="Assets/pfp.jpg" style="border-radius: 50%;">
+                                                        </div>
+
+                                                        <p
+                                                            style="font-size: 12px; text-align: center; width: 70%; color: white; margin-top: -10px;">
+                                                            Sed ut perspiciatis unde omnis iste natus error sit
+                                                            voluptatem accusantium doloremque laudantium, totam rem
+                                                            aperiam, eaque ipsa quae.
+                                                        </p>
+
+                                                        <span
+                                                            style="font-size: 15px; font-weight: bold; color: white; margin-top: -10px;">Michael
+                                                            Stuart</span>
+                                                        <span
+                                                            style="font-size: 13px; font-weight: bold; padding-bottom: 20px; color: #1ED085;">Seo
+                                                            Founder</span>
+
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+
+                                            <!-- Swiper JS -->
+                                            <script
+                                                src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                                            <!-- Initialize Swiper -->
+                                            <script>
+                                                var swiper = new Swiper(".mySwiper", {
+                                                    navigation: {
+                                                        nextEl: ".swiper-button-next",
+                                                        prevEl: ".swiper-button-prev",
+                                                    },
+                                                });
+                                            </script>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 ps-1 pe-2">
+
+                                        <div class="progresss col-12 ps-4 pt-3">
+
+                                            <p style="color: Black; font-size: 25px;">Progress Bar</p>
+                                            <hr>
+
+                                            <div style="height: auto; width: 80%;">
+
+                                                <!-- Facebook -->
+                                                <p style="font-weight: bold; font-size: 17px; color: #455A64;">Facebook
+                                                </p>
+                                                <div class="progress" style="margin-top: -2%; margin-bottom: 2%;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                        style="width: 73%">73%
+                                                    </div>
+                                                </div>
+
+                                                <!-- Twitter -->
+                                                <p style="font-weight: bold; font-size: 17px; color: #455A64;">Twitter
+                                                </p>
+                                                <div class="progress" style="margin-top: -2%; margin-bottom: 2%;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                        style="width: 62%">62%
+                                                    </div>
+                                                </div>
+
+                                                <!-- Instagram -->
+                                                <p style="font-weight: bold; font-size: 17px; color: #455A64;">Instagram
+                                                </p>
+                                                <div class="progress" style="margin-top: -2%; margin-bottom: 2%;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                        style="width: 54%">54%
+                                                    </div>
+                                                </div>
+
+                                                <!-- Google Plus -->
+                                                <p style="font-weight: bold; font-size: 17px; color: #455A64;">Google
+                                                    Plus</p>
+                                                <div class="progress" style="margin-top: -2%; margin-bottom: 2%;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                        style="width: 82%">82%
+                                                    </div>
+                                                </div>
+
+                                                <!-- Other -->
+                                                <p style="font-weight: bold; font-size: 17px; color: #455A64;">Other</p>
+                                                <div class="progress" style="margin-top: -2%;">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                        style="width: 48%">48%
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Two Calendar -->
+                            <div>
+
+                                <div class="division2">
+
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pe-2">
+
+                                        <div class="calendar1 col-12">
+
+                                            <div class="head ps-5 pt-5 d-flex" style="position: relative;">
+
+                                                <i class="bi bi-calendar3" style="font-size: 35px; color: white;"></i>
+                                                <p
+                                                    style="font-size: 30px; margin-left: 20px; color: white; margin-top: 2px;">
+                                                    6th July 2022 </p>
+
+                                                <div
+                                                    style="position: absolute; height: 50px; width: 50px; background-color: #1ED085; top: 80%; left: 75%; border-radius: 50%;">
+                                                    <div class="plus"
+                                                        style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%;">
+                                                        <i class="bi bi-plus-lg"
+                                                            style="font-size: 30px; color: white;"></i>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <!-- Inner Content -->
+                                            <div class="text-content">
+
+                                                <p style="font-size: 18px; padding-top: 20px; padding-left: 30px;">Today
+                                                    Tasks for Ronney Jack</p>
+                                                <hr>
+
+                                                <div class="one-calendar">
+
+                                                    <div class="color1"></div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p
+                                                            style="padding-top: 20px; padding-left: 30px; color: grey; font-size: 18px;">
+                                                            Meeting about plan for Admin Template 2018</p>
+                                                        <span
+                                                            style="font-weight: bold; float: left; margin-top: -15px; margin-left: 30px;">10:00
+                                                            AM</span>
+
+                                                    </div>
+
+                                                </div>
+                                                <hr id="hr">
+
+                                                <div class="one-calendar">
+
+                                                    <div class="color2"></div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p
+                                                            style="padding-top: 35px; padding-left: 30px; color: grey; font-size: 18px;">
+                                                            Create new task for Dashboard</p>
+                                                        <span
+                                                            style="font-weight: bold; float: left; margin-top: -15px; margin-left: 30px;">10:00
+                                                            AM</span>
+
+                                                    </div>
+
+                                                </div>
+                                                <hr id="hr">
+
+                                                <div class="one-calendar">
+
+                                                    <div class="color3"></div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p
+                                                            style="padding-top: 35px; padding-left: 30px; color: grey; font-size: 18px;">
+                                                            Meeting about plan for Admin Template 2018</p>
+                                                        <span
+                                                            style="font-weight: bold; float: left; margin-top: -15px; margin-left: 30px;">11:00
+                                                            AM</span>
+
+                                                    </div>
+
+                                                </div>
+                                                <hr id="hr">
+
+                                                <div class="one-calendar">
+
+                                                    <div class="color4"></div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p
+                                                            style="padding-top: 35px; padding-left: 30px; color: grey; font-size: 18px;">
+                                                            Create new task for Dashboard</p>
+                                                        <span
+                                                            style="font-weight: bold; float: left; margin-top: -15px; margin-left: 30px;">10:00
+                                                            AM</span>
+
+                                                    </div>
+
+                                                </div>
+                                                <hr id="hr">
+
+                                                <div class="one-calendar">
+
+                                                    <div class="color5"></div>
+
+                                                    <div style="display: flex; flex-direction: column;">
+                                                        <p
+                                                            style="padding-top: 35px; padding-left: 30px; color: grey; font-size: 18px;">
+                                                            Meeting about plan for Admin Template 2018</p>
+                                                        <span
+                                                            style="font-weight: bold; float: left; margin-top: -15px; margin-left: 30px;">02:00
+                                                            AM</span>
+
+                                                    </div>
+
+                                                </div>
+                                                <hr id="hr">
+
+                                                <div class="btn btn-success btn-rounded"
+                                                    style="margin-left: 45%; margin-top: 30px;">
+                                                    Read More</div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 ps-1 pe-2">
+
+                                        <div class="calendar2 col-12">
+
+                                            <div class="head" style="position: relative;">
+
+
+                                                <div class="head ps-5 pt-5 d-flex" style="position: relative;">
+
+                                                    <i class="bi bi-chat-left-text"
+                                                        style="font-size: 35px; color: white;"></i>
+                                                    <p
+                                                        style="font-size: 30px; margin-left: 20px; color: white; margin-top: 2px;">
+                                                        Updates </p>
+
+                                                    <div
+                                                        style="position: absolute; height: 50px; width: 50px; background-color: #1ED085; top: 80%; left: 75%; border-radius: 50%;">
+                                                        <div class="plus"
+                                                            style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 50%;">
+                                                            <i class="bi bi-plus-lg"
+                                                                style="font-size: 30px; color: white;"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <!-- Inner Content -->
+                                                <div class="text-content">
+
+                                                    <p style="font-size: 18px; padding-top: 20px; padding-left: 30px;">
+                                                        User confirmation</p>
+                                                    <hr>
+
+                                                    <div class="one-calendar">
+
+                                                        <div class="color1"></div>
+
+                                                        <div style="display: flex;">
+
+                                                            <div class="pfp-img"
+                                                                style="padding-top: 10px; margin-left : 40px;">
+                                                                <img src="Assets/pfp.jpg" height="60px" width="60px"
+                                                                    style="border-radius: 50%;" alt="">
+                                                            </div>
+
+                                                            <div class="other"
+                                                                style="height: 70px; width: auto; margin-left: 20px; flex-wrap: wrap;">
+
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <div>
+                                                                        <p
+                                                                            style="font-size: 18px; font-weight: bold; margin-top: 15px;">
+                                                                            Herman Beck</p>
+                                                                        <p style="margin-top: -15px;">Sed ut
+                                                                            perspiciatis unde omnis.</p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <hr id="hr">
+
+                                                    <div class="one-calendar">
+
+                                                        <div class="color2"></div>
+
+                                                        <div style="display: flex;">
+
+                                                            <div class="pfp-img"
+                                                                style="padding-top: 25px; margin-left : 40px;">
+                                                                <img src="Assets/pfp2.png" height="60px" width="60px"
+                                                                    style="border-radius: 50%;" alt="">
+                                                            </div>
+
+                                                            <div class="other"
+                                                                style="height: 70px; width: auto; margin-left: 20px; flex-wrap: wrap;">
+
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <div>
+                                                                        <p
+                                                                            style="font-size: 18px; font-weight: bold; margin-top: 30px;">
+                                                                            John Smith</p>
+                                                                        <p style="margin-top: -15px;">On the other hand,
+                                                                            we denounce.</p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <hr id="hr">
+
+                                                    <div class="one-calendar">
+
+                                                        <div class="color3"></div>
+
+                                                        <div style="display: flex;">
+
+                                                            <div class="pfp-img"
+                                                                style="padding-top: 25px; margin-left : 40px;">
+                                                                <img src="Assets/pfp.jpg" height="60px" width="60px"
+                                                                    style="border-radius: 50%;" alt="">
+                                                            </div>
+
+                                                            <div class="other"
+                                                                style="height: 70px; width: auto; margin-left: 20px; flex-wrap: wrap;">
+
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <div>
+                                                                        <p
+                                                                            style="font-size: 18px; font-weight: bold; margin-top: 30px;">
+                                                                            Herman Beck</p>
+                                                                        <p style="margin-top: -15px;">Sed ut
+                                                                            perspiciatis unde omnis.</p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <hr id="hr">
+
+                                                    <div class="one-calendar">
+
+                                                        <div class="color4"></div>
+
+                                                        <div style="display: flex;">
+
+                                                            <div class="pfp-img"
+                                                                style="padding-top: 25px; margin-left : 40px;">
+                                                                <img src="Assets/pfp2.png" height="60px" width="60px"
+                                                                    style="border-radius: 50%;" alt="">
+                                                            </div>
+
+                                                            <div class="other"
+                                                                style="height: 70px; width: auto; margin-left: 20px; flex-wrap: wrap;">
+
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <div>
+                                                                        <p
+                                                                            style="font-size: 18px; font-weight: bold; margin-top: 30px;">
+                                                                            John Smith</p>
+                                                                        <p style="margin-top: -15px;">On the other hand,
+                                                                            we denounce.</p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <hr id="hr">
+
+                                                    <div class="one-calendar">
+
+                                                        <div class="color5"></div>
+
+                                                        <div style="display: flex;">
+
+                                                            <div class="pfp-img"
+                                                                style="padding-top: 25px; margin-left : 40px;">
+                                                                <img src="Assets/pfp.jpg" height="60px" width="60px"
+                                                                    style="border-radius: 50%;" alt="">
+                                                            </div>
+
+                                                            <div class="other"
+                                                                style="height: 70px; width: auto; margin-left: 20px; flex-wrap: wrap;">
+
+                                                                <div
+                                                                    style="display: flex; justify-content: space-between;">
+                                                                    <div>
+                                                                        <p
+                                                                            style="font-size: 18px; font-weight: bold; margin-top: 30px;">
+                                                                            Herman Beck</p>
+                                                                        <p style="margin-top: -15px;">Sed ut
+                                                                            perspiciatis unde omnis.</p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <hr id="hr">
+
+                                                    <div class="btn btn-success btn-rounded"
+                                                        style="margin-left: 45%; margin-top: 30px;">Read More</div>
+
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- CopyRight Section -->
+                            <div>
+
+                                <div class="copy">
+
+                                    <div>
+                                        <p style="font-size: 20px; font-weight: 700; padding: 10px;">Copyright © 2018
+                                            Designed by Rohit
+                                            Pakhre. All rights reserved.</p>
+
+                                        <p>Distributed By: <span style="font-weight: bold; padding: 10px;">ROHIT
+                                                PAKHRE</span></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- j-Query -->
+    <script>
+
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#aside").toggleClass("expand")
+                $(".icon-image").toggle();
+
+                // General 
+                if ($("#general").css("display") === "block") {
+                    $("#general").css("display", "none");
+                } else {
+
+                    $("#general").css("display", "block");
+                }
+
+                // Another Hide 
+                if ($("#another-hide").css("display") === "block") {
+                    $("#another-hide").css("display", "none");
+                } else {
+
+                    $("#another-hide").css("display", "block");
+                }
+
+                // Right Icons
+                if ($("#right-icon1").css("display") === "block") {
+                    $("#right-icon1").css("display", "none");
+                } else {
+
+                    $("#right-icon1").css("display", "block");
+                }
+
+                if ($("#right-icon2").css("display") === "block") {
+                    $("#right-icon2").css("display", "none");
+                } else {
+
+                    $("#right-icon2").css("display", "block");
+                }
+
+                if ($("#right-icon3").css("display") === "block") {
+                    $("#right-icon3").css("display", "none");
+                } else {
+
+                    $("#right-icon3").css("display", "block");
+                }
+
+                if ($("#right-icon4").css("display") === "block") {
+                    $("#right-icon4").css("display", "none");
+                } else {
+
+                    $("#right-icon4").css("display", "block");
+                }
+
+                if ($("#right-icon5").css("display") === "block") {
+                    $("#right-icon5").css("display", "none");
+                } else {
+
+                    $("#right-icon5").css("display", "block");
+                }
+
+                if ($("#right-icon6").css("display") === "block") {
+                    $("#right-icon6").css("display", "none");
+                } else {
+
+                    $("#right-icon6").css("display", "block");
+                }
+
+                if ($("#right-icon7").css("display") === "block") {
+                    $("#right-icon7").css("display", "none");
+                } else {
+
+                    $("#right-icon7").css("display", "block");
+                }
+
+                if ($("#right-icon8").css("display") === "block") {
+                    $("#right-icon8").css("display", "none");
+                } else {
+
+                    $("#right-icon8").css("display", "block");
+                }
+
+                if ($("#right-icon9").css("display") === "block") {
+                    $("#right-icon9").css("display", "none");
+                } else {
+
+                    $("#right-icon9").css("display", "block");
+                }
+
+                if ($("#right-icon10").css("display") === "block") {
+                    $("#right-icon10").css("display", "none");
+                } else {
+
+                    $("#right-icon10").css("display", "block");
+                }
+
+                if ($("#right-icon11").css("display") === "block") {
+                    $("#right-icon11").css("display", "none");
+                } else {
+
+                    $("#right-icon11").css("display", "block");
+                }
+
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>
