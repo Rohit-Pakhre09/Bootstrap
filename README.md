@@ -8,6 +8,13 @@
 <a href="https://active-web.netlify.app/"> <p>https://active-web.netlify.app/</p> </a>
 <br>
 
+<h1> Admin Dashboard </h1>
+<p>This is a Simple admin Panel which is made with HTML, CSS and Bootstrap(FrameWork)</p>
+<img src="https://github.com/Rohit-Pakhre09/BOOTSTRAP-Projects/blob/219da2142ed5e75d8605163f2835d95d79fb659a/DashBoard.png">
+
+<h3>Website Link </h3>
+<a href="https://admin-dahboard.netlify.app/">https://admin-dahboard.netlify.app/</a>
+
 <h1> Starbucks </h1>
 
 <p> This website is used with Bootstrap framework and for a certain part media query is also used. </p>
