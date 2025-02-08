@@ -1,0 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.banner {
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("Assets/Banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidecontent {
+    height: 100vh;
+    background-color: #14405edc;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mid-content {
+    position: relative;
+    top: 30%;
+    left: 4.5%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0%;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.vertical-line {
+    height: auto;
+    width: auto;
+    border-left: 2px solid rgb(0, 174, 255);
+    border-radius: 5px;
+}
