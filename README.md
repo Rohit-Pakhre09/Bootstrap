@@ -33,4 +33,4 @@
 <p> 
   This website utilizes the responsive Bootstrap framework. To enhance user experience, the website incorporates subtle jQuery functionalities, such as smooth animations, dynamic content updates etc
 </p> 
-<img src="https://github.com/Rohit-Pakhre09/BOOTSTRAP-Projects/blob/c5497c8a63940cca846bfadef48b3b413b84317b/Active-Website.png">">
+<img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/d6994f0a301e83a958e8c8d1bfb84aeaf3874813/Static%20Webpage/Assets/BootStrap%20Template.png">
