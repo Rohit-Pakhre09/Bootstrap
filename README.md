@@ -23,3 +23,14 @@
 
 <h3> Website Link </h3>
 <a href="https://star-buckss.netlify.app/"> <p>https://star-buckss.netlify.app/</p> </a>
+
+
+<h1> Static Webpage </h1>
+<p> 
+  This website utilizes the responsive Bootstrap framework. It is simple and basic webpage which has Navbar and Bootstrap Row and Column concept etc.  
+</p> 
+<img src="<h1> Active Website </h1>
+<p> 
+  This website utilizes the responsive Bootstrap framework. To enhance user experience, the website incorporates subtle jQuery functionalities, such as smooth animations, dynamic content updates etc
+</p> 
+<img src="https://github.com/Rohit-Pakhre09/BOOTSTRAP-Projects/blob/c5497c8a63940cca846bfadef48b3b413b84317b/Active-Website.png">">
