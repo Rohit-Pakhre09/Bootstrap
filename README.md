@@ -29,8 +29,4 @@
 <p> 
   This website utilizes the responsive Bootstrap framework. It is simple and basic webpage which has Navbar and Bootstrap Row and Column concept etc.  
 </p> 
-<img src="<h1> Active Website </h1>
-<p> 
-  This website utilizes the responsive Bootstrap framework. To enhance user experience, the website incorporates subtle jQuery functionalities, such as smooth animations, dynamic content updates etc
-</p> 
 <img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/d6994f0a301e83a958e8c8d1bfb84aeaf3874813/Static%20Webpage/Assets/BootStrap%20Template.png">
