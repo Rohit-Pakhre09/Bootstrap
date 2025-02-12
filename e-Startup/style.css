@@ -1,0 +1,435 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+#up-button {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #29b905;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  height: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav p {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.nav-item:hover .nav-link {
+  color: green;
+}
+
+.dropdown-item {
+  transition: all 0.4s ease-in-out;
+}
+
+#item-1:hover,
+#item-2:hover,
+#item-3:hover {
+  background-color: #4adb25;
+  color: white;
+}
+
+#hero {
+  margin-top: 101px;
+  height: auto;
+  padding-bottom: 70px;
+}
+
+#button {
+  height: 40px;
+  width: 150px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4ed62f;
+  color: white;
+}
+
+#button:hover {
+  background-color: #71c55d;
+}
+
+.block {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 50px;
+  color: #71c55d;
+  transition: color 0.3s ease-in-out;
+}
+
+.block-text {
+  font-size: 27px;
+  font-weight: bold;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.block:hover {
+  background-color: #71c55d;
+}
+
+.block:hover .icon {
+  color: white;
+}
+
+.block:hover .block-text {
+  color: white;
+}
+
+#button2 {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background-color: #4ed62f;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+#button2:hover {
+  background-color: #71c55d;
+  width: 210px;
+}
+
+#button2:hover span {
+  transition: all 0.4s ease-in-out;
+  margin-left: 10px;
+}
+
+.service {
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.service:hover {
+  margin-top: -1%;
+  border-bottom: 5px solid #27b407;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.svg img {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  width: 100%;
+  padding: 30px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  height: 80px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item-icon {
+  color: green;
+  margin-right: 10px;
+  background-color: #dfeedb;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-item:hover .grid-item-icon {
+  background-color: #81e56a;
+}
+
+.price {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.price:hover {
+  transform: scale(1.1);
+}
+
+#buy-btn {
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+#buy-btn:hover {
+  color: white;
+  background-color: #71c55d;
+}
+
+.ribbon p {
+  position: absolute;
+  background-color: #71c55d;
+  text-align: center;
+  transform: rotate(40deg);
+  font-size: 16px;
+  max-width: 100%;
+  width: 71%;
+  left: 50%;
+  top: 3%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 5px;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+#shadow {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+#text-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+#text-hover:hover {
+  color: #71c55d;
+}
+
+.side-view i {
+  transition: all 0.2s ease-in-out;
+}
+
+.side-view:hover i {
+  transform: scale(1.4);
+}
+
+.back {
+  transition: all 0.2s ease-in-out;
+}
+
+.side-view:hover .back {
+  transform: rotate(-10deg);
+  background-color: red;
+}
+
+input.form-control,
+textarea.form-control {
+  outline: none;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #98f382;
+  box-shadow: none;
+}
+
+#media {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid grey;
+}
+
+#media i {
+  color: grey;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#media:hover {
+  color: #4ed62f;
+  border: 1px solid #4ed62f;
+}
+
+#media:hover i {
+  color: #4ed62f;
+}
+
+/* Media Query for Feature SVG */
+@media (min-width: 992px) {
+  .svg img {
+    width: 85%;
+  }
+}
+
+/* Animation */
+.asset {
+  --animate-duration: 0.6s;
+}
+
+.bounce1 {
+  --animate-duration: 1s;
+}
+
+.bounce2 {
+  --animate-duration: 1.6s;
+}
+
+.bounce3 {
+  --animate-duration: 2s;
+}
+
+.bounce4 {
+  --animate-duration: 2.9s;
+}
+
+.image-content {
+  --animate-duration: 1.9s;
+}
+
+.service-section1 {
+  --animate-duration: 1s;
+}
+
+.service-section2 {
+  --animate-duration: 1.5s;
+}
+
+.service-section3 {
+  --animate-duration: 2s;
+}
+
+.service-section4 {
+  --animate-duration: 1.2s;
+}
+
+.service-section5 {
+  --animate-duration: 1.5s;
+}
+
+.service-section6 {
+  --animate-duration: 2s;
+}
+
+#grid-section1 {
+  --animate-duration: 1s;
+}
+
+#grid-section2 {
+  --animate-duration: 1.5s;
+}
+
+#grid-section3 {
+  --animate-duration: 2s;
+}
+
+#grid-section4 {
+  --animate-duration: 1.2s;
+}
+
+#grid-section5 {
+  --animate-duration: 1.5s;
+}
+
+#grid-section6 {
+  --animate-duration: 2s;
+}
+
+#price-1 {
+  --animate-duration: 1.5s;
+}
+
+#price-2 {
+  --animate-duration: 1.9s;
+}
+
+#price-3 {
+  --animate-duration: 2s;
+}
+
+#price-4 {
+  --animate-duration: 2.4s;
+}
+
+.flip-1 {
+  --animate-duration: 1.5s;
+}
+
+.flip-2 {
+  --animate-duration: 1.9s;
+}
+
+.flip-3 {
+  --animate-duration: 2.3s;
+}
+
+.flip-4 {
+  --animate-duration: 2.7s;
+}
+
+.flip-5 {
+  --animate-duration: 3s;
+}
+
+.contact {
+  --animate-duration: 1.5s;
+}
+
+.info {
+  --animate-duration: 2.2s;
+}
+
+.footer {
+  --animate-duration: 1.5s;
+}
