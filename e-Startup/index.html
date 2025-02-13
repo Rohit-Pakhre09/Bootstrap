@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>e-Start Up</title>
+
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/letter-e.png">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liter&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- J Query -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Animation CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animation Js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="head">
+
+        <nav class="navbar navbar-expand-lg bg-light animate__animated animate__fadeIn animate__slow	5s">
+            <div class="container">
+                <a href="" style="text-decoration: none; color: black;">
+                    <p><span style="color: green; font-weight: bold;">e</span>Startup</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#modal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div id="home-button"></div>
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+
+                        <li class="nav-item"><a href="#home-button" id="home-button" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#feature-section" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Explore</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id="item-1" href="#pricing-section">Pricing</a></li>
+                                <li><a class="dropdown-item" id="item-2" href="#faq-section">FAQ</a></li>
+                                <li><a class="dropdown-item" id="item-3" href="#contact-section">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Modal -->
+    <div class="modal wow animate__animated animate__fadeIn" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+
+                        <li class="nav-item"><a href="#home-button" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#feature-section" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#pricing-section">Pricing</a></li>
+                                <li><a class="dropdown-item" href="#faq-section">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#contact-section">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container-fluid" id="hero-section" style="background-color: #F1F6F1; padding-bottom: 40px;">
+        <div class="container" id="hero">
+
+            <!-- E-Start Content & Hero Png -->
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 order-2 order-sm-2 order-md-1 order-lg-1 wow animate__animated animate__fadeInUp animate__delay  0.9s"
+                    style="margin-top: 15%;">
+                    <span style="font-size: 50px; font-weight: bold;">eStartup</span>
+                    <p style="color: grey; width: 90%;">Sed ahem ladanum dolores. Voluptatem itaque ea consequatur
+                        eveniet. Eum quas beatae cumque eum quaerat.</p>
+
+                    <div class="d-flex">
+                        <button id="button">Get Started</button>
+                        <button
+                            style="height: 40px; background-color: transparent; border: none; font-size: 20px; font-weight: bold; color: #71C55D; margin-left: 4%;"><i
+                                class="bi bi-play-circle" style="color: #71C55D; font-size: 25px;"></i> Watch
+                            Video</button>
+                    </div>
+                </div>
+
+                <div class="asset col-12 col-sm-12 col-md-7 col-lg-7 order-1 order-sm-2 order-md-2 order-lg-2 wow animate__animated animate__fadeInUp animate__delay  4s animate__slow	0.9s"
+                    style="margin-top: 10%;">
+                    <img src="Assets/hero-img.png" class="d-block w-100 img-fluid" alt="">
+                </div>
+            </div>
+
+            <!-- 4 Blocks -->
+            <div class="container mt-5 p-0">
+                <div class="row g-4 align-items-stretch">
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 bounce1 wow animate__animated animate__bounceInUp">
+                        <div class="d-flex block">
+                            <i class="bi bi-easel icon"></i>
+                            <p class="block-text" style="cursor: pointer;">Scholars</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 bounce2 wow animate__animated animate__bounceInUp">
+                        <div class="d-flex block">
+                            <i class="bi bi-gem icon"></i>
+                            <p class="block-text" style="cursor: pointer;">Gems</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 bounce3 wow animate__animated animate__bounceInUp">
+                        <div class="d-flex block">
+                            <i class="bi bi-geo-alt icon"></i>
+                            <p class="block-text" style="cursor: pointer;">Location</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 bounce4 wow animate__animated animate__bounceInUp">
+                        <div class="d-flex block">
+                            <i class="bi bi-command icon"></i>
+                            <p class="block-text" style="cursor: pointer;">Connection</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container mt-5 mb-5" style="padding-top: 150px;" id="about-section">
+
+        <!-- Written Content -->
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 wow animate__animated animate__fadeInUp about-section">
+                <p style="color: grey; font-size: 20px;">WHO WE ARE</p>
+                <p style="font-size: 35px; font-weight: bold;">Unleashing Potential with Creative Strategy.</p>
+                <p style="color: grey; font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <p><i class="bi bi-check-circle" style="color: #71C55D;"></i> Ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+                <p><i class="bi bi-check-circle" style="color: #71C55D;"></i> Duis aute irure dolor in reprehenderit in
+                    voluptate velit.</p>
+                <p><i class="bi bi-check-circle" style="color: #71C55D;"></i> Ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                    mastiro dolore eu fugiat nulla pariatur.</p>
+
+                <button id="button2">Read More &nbsp;<span>→</span></button>
+            </div>
+
+            <!-- Image Content -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 wow animate__animated animate__fadeInUp image-content"
+                style="margin-top: 15px;">
+                <div class="d-flex" style="gap: 20px">
+                    <img src="Assets/group-1.jpg" class="d-block w-50 img-fluid"
+                        style="border-radius: 10px; object-fit: cover;" alt="">
+                    <div class="d-flex flex-column justify-content-between">
+                        <img src="Assets/group-2.jpg" class="d-block w-100 img-fluid"
+                            style="border-radius: 10px; object-fit: cover;" alt="">
+                        <img src="Assets/group-3.jpg" class="d-block w-100 img-fluid"
+                            style="border-radius: 10px; object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Services Section -->
+    <div class="container" style="padding-top: 120px;" id="service-section">
+
+        <div class="row">
+
+            <!-- Title -->
+            <div style="width: 100%; margin-top: 1%;"
+                class="d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeInUp animate__delay	2s">
+                <button
+                    style="width: auto; padding-left: 15px; padding-right: 15px; background-color: #c3f3b7; color: #29b905; border: none; border-radius: 10px;">Services</button>
+                <p style="font-size: 40px; font-weight: bold; text-align: center; margin-top: 1%; cursor: pointer;">
+                    Check our <span
+                        style="font-size: 40px; font-weight: bold; color: #29b905; cursor: pointer;">Services</span></p>
+            </div>
+
+            <!-- 6 Blocks -->
+            <div class="container mt-5">
+                <div class="row g-4">
+
+                    <!-- 1 -->
+                    <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 wow animate__animated animate__fadeInUp service-section1">
+                        <div class="d-flex service align-items-flex-start justify-content-center">
+
+                            <div style="width: 90%;">
+                                <div
+                                    style="height: 70px; width: 70px; border-radius: 50%; background-color: #71C55D; margin-top: 9%; display: flex; justify-content: center; align-items: center;">
+                                    <i class="bi bi-activity"
+                                        style="font-size: 30px; color: white; font-weight: bold;"></i>
+                                </div>
+
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 5%;">Nesciunt Mete</p>
+                                <p style="height: 100px; overflow: hidden; text-overflow: ellipsis; object-fit: cover;">
+                                    Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                    dolores iure perferendis tempore et consequatur.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 wow animate__animated animate__fadeInUp service-section2">
+                        <div class="d-flex service align-items-flex-start justify-content-center">
+
+                            <div style="width: 90%;">
+                                <div
+                                    style="height: 70px; width: 70px; border-radius: 50%; background-color: #71C55D; margin-top: 9%; display: flex; justify-content: center; align-items: center;">
+                                    <i class="bi bi-broadcast"
+                                        style="font-size: 30px; color: white; font-weight: bold;"></i>
+                                </div>
+
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 5%;">Eosle Commodi</p>
+                                <p style="height: 100px; overflow: hidden; text-overflow: ellipsis; object-fit: cover;">
+                                    Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                    dolores iure perferendis tempore et consequatur.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 wow animate__animated animate__fadeInUp service-section3">
+                        <div class="d-flex service align-items-flex-start justify-content-center">
+
+                            <div style="width: 90%;">
+                                <div
+                                    style="height: 70px; width: 70px; border-radius: 50%; background-color: #71C55D; margin-top: 9%; display: flex; justify-content: center; align-items: center;">
+                                    <i class="bi bi-easel"
+                                        style="font-size: 30px; color: white; font-weight: bold;"></i>
+                                </div>
+
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 5%;">Ledo Market</p>
+                                <p style="height: 100px; overflow: hidden; text-overflow: ellipsis; object-fit: cover;">
+                                    Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                    dolores iure perferendis tempore et consequatur.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 wow animate__animated animate__fadeInUp service-section4">
+                        <div class="d-flex service align-items-flex-start justify-content-center">
+
+                            <div style="width: 90%;">
+                                <div
+                                    style="height: 70px; width: 70px; border-radius: 50%; background-color: #71C55D; margin-top: 9%; display: flex; justify-content: center; align-items: center;">
+                                    <i class="bi bi-bounding-box-circles"
+                                        style="font-size: 30px; color: white; font-weight: bold;"></i>
+                                </div>
+
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 5%;">Asperiores Commodit</p>
+                                <p style="height: 100px; overflow: hidden; text-overflow: ellipsis; object-fit: cover;">
+                                    Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                    dolores iure perferendis tempore et consequatur.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 wow animate__animated animate__fadeInUp service-section5">
+                        <div class="d-flex service align-items-flex-start justify-content-center">
+
+                            <div style="width: 90%;">
+                                <div
+                                    style="height: 70px; width: 70px; border-radius: 50%; background-color: #71C55D; margin-top: 9%; display: flex; justify-content: center; align-items: center;">
+                                    <i class="bi bi-calendar4-week"
+                                        style="font-size: 30px; color: white; font-weight: bold;"></i>
+                                </div>
+
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 5%;">Velit Doloremque</p>
+                                <p style="height: 100px; overflow: hidden; text-overflow: ellipsis; object-fit: cover;">
+                                    Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                    dolores iure perferendis tempore et consequatur.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 wow animate__animated animate__fadeInUp service-section6">
+                        <div class="d-flex service align-items-flex-start justify-content-center">
+
+                            <div style="width: 90%;">
+                                <div
+                                    style="height: 70px; width: 70px; border-radius: 50%; background-color: #71C55D; margin-top: 9%; display: flex; justify-content: center; align-items: center;">
+                                    <i class="bi bi-chat-square-text"
+                                        style="font-size: 30px; color: white; font-weight: bold;"></i>
+                                </div>
+
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 5%;">Dolor Archit</p>
+                                <p style="height: 100px; overflow: hidden; text-overflow: ellipsis; object-fit: cover;">
+                                    Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                                    dolores iure perferendis tempore et consequatur.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Features Section -->
+    <div class="container-fluid p-0" id="feature-section" style="background-color: #F1F6F1; margin-top: 5%;">
+        <div class="container" style="padding-top: 100px; padding-bottom: 150px;">
+
+            <div class="row">
+
+                <!-- Title -->
+                <div style="width: 100%; margin-top: 5%;"
+                    class="d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeInUp animation__delay  10s">
+                    <button
+                        style="width: auto; padding-left: 15px; padding-right: 15px; background-color: #c3f3b7; color: #29b905; border: none; border-radius: 10px;">Features</button>
+                    <p style="font-size: 40px; font-weight: bold; text-align: center; margin-top: 1%; cursor: pointer;">
+                        Check our <span
+                            style="font-size: 40px; font-weight: bold; color: #29b905; cursor: pointer;">Features</span>
+                    </p>
+                </div>
+
+                <!-- Picture & Info Section -->
+                <div class="svg col-12 col-sm-12 col-md-12 col-lg-6 mt-4 wow animate__animated animate__fadeInUp">
+                    <img src="Assets/features.svg" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
+
+                    <!-- 6 blocks with Grid System -->
+                    <div class="grid-container p-0">
+                        <div class="grid-item wow animate__animated animate__bounceInDown" id="grid-section1">
+                            <span class="grid-item-icon"
+                                style="display: flex; justify-content: center; align-items: center; height: 40px; width: 40px;">
+                                <i class="bi bi-check-lg" style="font-size: 20px;"></i>
+                            </span>
+                            Eos aspernatur rem
+                        </div>
+                        <div class="grid-item wow animate__animated animate__bounceInDown" id="grid-section2">
+                            <span class="grid-item-icon"
+                                style="display: flex; justify-content: center; align-items: center; height: 40px; width: 40px;">
+                                <i class="bi bi-check-lg" style="font-size: 20px;"></i>
+                            </span>
+                            Facilis neque ipsa
+                        </div>
+                        <div class="grid-item wow animate__animated animate__bounceInDown" id="grid-section3">
+                            <span class="grid-item-icon"
+                                style="display: flex; justify-content: center; align-items: center; height: 40px; width: 40px;">
+                                <i class="bi bi-check-lg" style="font-size: 20px;"></i>
+                            </span>
+                            Volup amet volupt
+                        </div>
+                        <div class="grid-item wow animate__animated animate__bounceInDown" id="grid-section4">
+                            <span class="grid-item-icon"
+                                style="display: flex; justify-content: center; align-items: center; height: 40px; width: 40px;">
+                                <i class="bi bi-check-lg" style="font-size: 20px;"></i>
+                            </span>
+                            Rerum omnis sint
+                        </div>
+                        <div class="grid-item wow animate__animated animate__bounceInDown" id="grid-section5">
+                            <span class="grid-item-icon"
+                                style="display: flex; justify-content: center; align-items: center; height: 40px; width: 40px;">
+                                <i class="bi bi-check-lg" style="font-size: 20px;"></i>
+                            </span>
+                            Alias possimus
+                        </div>
+                        <div class="grid-item wow animate__animated animate__bounceInDown" id="grid-section6">
+                            <span class="grid-item-icon"
+                                style="display: flex; justify-content: center; align-items: center; height: 40px; width: 40px;">
+                                <i class="bi bi-check-lg" style="font-size: 20px;"></i>
+                            </span>
+                            Repellendus molli
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="container" id="pricing-section" style="padding-top: 100px;">
+
+        <div class="row">
+
+            <!-- Title -->
+            <div style="width: 100%; margin-top: 5%;"
+                class="d-flex justify-content-center flex-column align-items-center wow animate__animated animate__fadeInUp animation__delay  2s">
+                <button
+                    style="width: auto; padding-left: 15px; padding-right: 15px; background-color: #c3f3b7; color: #29b905; border: none; border-radius: 10px;">Pricing</button>
+                <p style="font-size: 40px; font-weight: bold; text-align: center; margin-top: 1%; cursor: pointer;">
+                    Check our <span
+                        style="font-size: 40px; font-weight: bold; color: #29b905; cursor: pointer;">Pricing</span></p>
+            </div>
+
+        </div>
+
+        <!-- 4blocks of Pricing -->
+        <div class="row g-4 mt-4">
+
+            <!-- 1 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 wow animate__animated animate__zoomInDown"
+                id="price-1">
+                <div class="d-flex price">
+
+                    <span style="color: #20C997; font-weight: bold; font-size: 20px;">Free Plan</span>
+                    <p style="margin-top: 20px; font-weight: bold; font-size: 30px;"><sup
+                            style="font-size: 20px; font-weight: bold;">$</sup>0 <span
+                            style="font-size: 20px; color: grey; font-weight: 0;">/ mo</span></p>
+
+                    <i class="bi bi-box" style="font-size: 60px; color: #20C997;"></i>
+                    <p style="margin-top: 20px;">Aida dere</p>
+                    <p>Nec feugiat nisl</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p style="text-decoration: line-through; color: grey;">Pharetra massa</p>
+                    <p style="text-decoration: line-through; color: grey;">Massa ultricies mi</p>
+
+                    <button
+                        style="border: 1px solid #72C55E; width: 150px; margin-top: 10px; height: 40px; border-radius: 30px; font-size: 16px; font-weight: bold;"
+                        id="buy-btn">Buy Now</button>
+
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 wow animate__animated animate__zoomInDown"
+                id="price-2">
+                <div class="d-flex price">
+
+                    <span style="color: #0DCAF0; font-weight: bold; font-size: 20px;">Starter Plan</span>
+                    <p style="margin-top: 20px; font-weight: bold; font-size: 30px;"><sup
+                            style="font-size: 20px; font-weight: bold;">$</sup>1<sub style="font-size: 40px;">9</sub>
+                        <span style="font-size: 20px; color: grey; font-weight: 0;">/ mo</span>
+                    </p>
+
+                    <i class="bi bi-send" style="font-size: 60px; color: #0DCAF0"></i>
+                    <p style="margin-top: 20px;">Aida dere</p>
+                    <p>Nec feugiat nisl</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p style="text-decoration: line-through; color: grey;">Pharetra massa</p>
+                    <p style="text-decoration: line-through; color: grey;">Massa ultricies mi</p>
+
+                    <button
+                        style="border: 1px solid #72C55E; width: 150px; margin-top: 10px; height: 40px; border-radius: 30px; font-size: 16px; font-weight: bold;"
+                        id="buy-btn">Buy Now</button>
+                    <div class="ribbon col-12 col-sm-12 col-md-6 col-lg-6">
+                        <p>Featured</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 3 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 wow animate__animated animate__zoomInDown"
+                id="price-3">
+                <div class="d-flex price">
+
+                    <span style="color: #FD7E14; font-weight: bold; font-size: 20px;">Business Plan</span>
+                    <p style="margin-top: 20px; font-weight: bold; font-size: 30px;"><sup
+                            style="font-size: 20px; font-weight: bold;">$</sup>2<sub style="font-size: 40px;">9</sub>
+                        <span style="font-size: 20px; color: grey; font-weight: 0;">/ mo</span>
+                    </p>
+
+                    <i class="bi bi-airplane" style="font-size: 60px; color: #FD7E14;"></i>
+                    <p style="margin-top: 20px;">Aida dere</p>
+                    <p>Nec feugiat nisl</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p style="text-decoration: line-through; color: grey;">Pharetra massa</p>
+                    <p style="text-decoration: line-through; color: grey;">Massa ultricies mi</p>
+
+                    <button
+                        style="border: 1px solid #72C55E; width: 150px; margin-top: 10px; height: 40px; border-radius: 30px; font-size: 16px; font-weight: bold;"
+                        id="buy-btn">Buy Now</button>
+
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 wow animate__animated animate__zoomInDown"
+                id="price-4">
+                <div class="d-flex price">
+
+                    <span style="color: #0D6EFD; font-weight: bold; font-size: 20px;">Ultimate Plan</span>
+                    <p style="margin-top: 20px; font-weight: bold; font-size: 30px;"><sup
+                            style="font-size: 20px; font-weight: bold;">$</sup>4<sub style="font-size: 40px;">9</sub>
+                        <span style="font-size: 20px; color: grey; font-weight: 0;">/ mo</span>
+                    </p>
+
+                    <i class="bi bi-rocket" style="font-size: 60px; color: #0D6EFD;"></i>
+                    <p style="margin-top: 20px;">Aida dere</p>
+                    <p>Nec feugiat nisl</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p style="text-decoration: line-through; color: grey;">Pharetra massa</p>
+                    <p style="text-decoration: line-through; color: grey;">Massa ultricies mi</p>
+
+                    <button
+                        style="border: 1px solid #72C55E; width: 150px; margin-top: 10px; height: 40px; border-radius: 30px; font-size: 16px; font-weight: bold;"
+                        id="buy-btn">Buy Now</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container-fluid" id="faq-section"
+        style="padding-top: 150px; background-color: #F1F6F1; margin-top: 90px;">
+        <div class="container pt-5" style="padding-bottom: 100px;">
+
+            <div class="row">
+
+                <!-- Frequently Asked Question -->
+                <div
+                    class="col-12 col-sm-12 col-md-3 col-lg-3 wow animate__animated animate__fadeInUpBig animate__delay  2s">
+                    <p style="font-size: 30px;">Frequently Asked <span style="font-weight: bold;">Questions</span></p>
+                    <p style="font-size: 15px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    </p>
+                </div>
+
+                <!-- Accordian -->
+                <div class="col-12 col-sm-12 col-md-9 g-2 col-lg-9 mb-5">
+
+                    <div class="accordion accordion-flush g-4" id="accordionFlushExample">
+
+                        <!-- 1 -->
+                        <div class="accordion-item mb-3 wow animate__animated animate__flipInX flip-1" id="shadow">
+                            <h2 class="accordion-header">
+                                <button id="text-hover" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                    <span
+                                        style="font-size: 20px; font-weight: bold; margin-right: 20px; color: #71C55D;">1.</span>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 15px; width: 80%;">Non
+                                        consectetur a erat nam at lectus urna duis?</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="accordion-item mb-3 wow animate__animated animate__flipInX flip-2" id="shadow">
+                            <h2 class="accordion-header">
+                                <button id="text-hover" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                                    <span
+                                        style="font-size: 20px; font-weight: bold; margin-right: 20px; color: #71C55D;">2.</span>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 15px; width: 80%;">Feugiat
+                                        scelerisque varius morbi enim nunc faucibus a pellentesque?</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque
+                                    habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus
+                                    faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                    dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="accordion-item mb-3 wow animate__animated animate__flipInX flip-3" id="shadow">
+                            <h2 class="accordion-header">
+                                <button id="text-hover" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                                    <span
+                                        style="font-size: 20px; font-weight: bold; margin-right: 20px; color: #71C55D;">3.</span>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 15px; width: 80%;">Dolor
+                                        sit amet consectetur adipiscing elit pellentesque?</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                    amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis
+                                    convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi
+                                    quis</div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="accordion-item mb-3 wow animate__animated animate__flipInX flip-4" id="shadow">
+                            <h2 class="accordion-header">
+                                <button id="text-hover" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsefour">
+                                    <span
+                                        style="font-size: 20px; font-weight: bold; margin-right: 20px; color: #71C55D;">4.</span>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 15px; width: 80%;">Ac odio
+                                        tempor orci dapibus. Aliquam eleifend mi in nulla?</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse">
+                                <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque
+                                    habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus
+                                    faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                    dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="accordion-item mb-3 wow animate__animated animate__flipInX flip-5" id="shadow">
+                            <h2 class="accordion-header">
+                                <button id="text-hover" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsefive">
+                                    <span
+                                        style="font-size: 20px; font-weight: bold; margin-right: 20px; color: #71C55D;">5.</span>
+                                    <p style="font-size: 18px; font-weight: bold; margin-top: 15px; width: 80%;">Tempus
+                                        quam pellentesque nec nam aliquam sem et tortor consequat?</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefive" class="accordion-collapse collapse">
+                                <div class="accordion-body">Molestie a iaculis at erat pellentesque adipiscing commodo.
+                                    Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas
+                                    accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                    turpis cursus in</div>
+                            </div>
+                        </div>
+
+                        <!-- J Query -->
+                        <script>
+
+                            $(document).ready(function () {
+                                $(".accordion-item").click(function () {
+                                    $("h2").css("color", "#71C55D");
+                                });
+                            });
+
+                        </script>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact-section" style="padding-top: 70px;">
+
+        <div class="row">
+
+
+            <!-- Title -->
+            <div style="width: 100%; margin-top: 4%;"
+                class="d-flex justify-content-center flex-column align-items-center wow animate__animated animate__zoomInUp contact">
+                <button
+                    style="width: auto; padding-left: 15px; padding-right: 15px; background-color: #c3f3b7; color: #29b905; border: none; border-radius: 10px;">Contact</button>
+                <p style="font-size: 40px; font-weight: bold; text-align: center; margin-top: 1%; cursor: pointer;">Need
+                    Help? <span style="font-size: 40px; font-weight: bold; color: #29b905; cursor: pointer;">Contact
+                        US</span></p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-3 wow animate__animated animate__zoomIn info">
+
+                <!-- 1 -->
+                <div style="cursor: pointer;" class="side-view d-flex align-items-center p-2">
+
+                    <div class="d-flex justify-content-center align-items-center rounded rounded-pill back"
+                        style="height: 50px; width: 50px; background-color: #F4FBF2;">
+                        <i class="bi bi-geo-alt text-success" style="font-size: 25px;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <span style="font-size: 20px; margin-top: 5px; font-weight: bold;">Address</span>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+
+                </div>
+
+                <!-- 2 -->
+                <div style="cursor: pointer;" class="side-view d-flex align-items-center p-2 mt-2">
+
+                    <div class="d-flex justify-content-center align-items-center rounded rounded-pill back"
+                        style="height: 50px; width: 50px; background-color: #F4FBF2;">
+                        <i class="bi bi-telephone text-success" style="font-size: 25px;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <span style="font-size: 20px; margin-top: 5px; font-weight: bold;">Call Us</span>
+                        <p>+1 5589 55488 55</p>
+                    </div>
+
+                </div>
+
+                <!-- 3 -->
+                <div style="cursor: pointer;" class="side-view d-flex align-items-center p-2 mt-2">
+
+                    <div class="d-flex justify-content-center align-items-center rounded rounded-pill back"
+                        style="height: 50px; width: 50px; background-color: #F4FBF2;">
+                        <i class="bi bi-envelope text-success" style="font-size: 25px;"></i>
+                    </div>
+
+                    <div class="ms-3">
+                        <span style="font-size: 20px; margin-top: 5px; font-weight: bold;">Email US</span>
+                        <p>info@example.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-8 mt-3 mb-5 wow animate__animated animate__zoomIn info">
+
+                <form>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <input type="text" class="form-control p-3" placeholder="First Name">
+                        </div>
+
+                        <div class="col">
+                            <input type="text" class="form-control p-3" placeholder="First Name">
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="col">
+                            <input type="text" class="form-control p-3" placeholder="Subject">
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="col">
+                            <textarea class="form-control p-3" rows="7" placeholder="Message"></textarea>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="container-fluid" style="background-color: #F1F6F1; height: 200px;">
+
+        <div class="container wow animate__animated animate__fadeIn footer">
+
+            <div class="row">
+                <p class="text-center mt-5">© Copyright <a href="https://bootstrapmade.com/demo/eStartup/"
+                        style="text-decoration: none; color: #29B905; font-size: 15px;">estartup</a> All Rights Reserved
+                </p>
+
+                <!-- Icons -->
+                <div class="d-flex mb-2 justify-content-center">
+                    <!-- Twitter Icon -->
+                    <div id="media" class="d-flex justify-content-center align-items-center m-1"
+                        style="height: 40px; width: 40px; border-radius: 50%;">
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+
+                    <!-- Facebook Icon -->
+                    <div id="media" class="d-flex justify-content-center align-items-center m-1"
+                        style="height: 40px; width: 40px; border-radius: 50%;">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+
+                    <!-- Instagram Icon -->
+                    <div id="media" class="d-flex justify-content-center align-items-center m-1"
+                        style="height: 40px; width: 40px; border-radius: 50%;">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+
+                    <!-- LinkedIn Icon -->
+                    <div id="media" class="d-flex justify-content-center align-items-center m-1"
+                        style="height: 40px; width: 40px; border-radius: 50%;">
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+
+                <p class="text-center" style="font-size: 20px;">Created by: <a href="https://github.com/Rohit-Pakhre09"
+                        target="_blank" style="color: #29B905;">Rohit Pakhre</a></p>
+
+                <div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Home Button -->
+    <div class="d-flex justify-content-end bg-info">
+        <div class="d-flex justify-content-center align-items-center" id="up-button">
+            <a href="#head"><i class="bi bi-arrow-up" style="color: white; font-size: 20px; font-weight: bold;"></i></a>
+        </div>
+    </div>
+
+    <!-- WOW Animation -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Smooth Behavior for Top Scroll -->
+    <script>
+        document.querySelectorAll('#up-button, #home-button').forEach(button => {
+            button.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
