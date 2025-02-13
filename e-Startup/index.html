@@ -60,10 +60,11 @@
                 </button>
 
 
+                <div id="home-button"></div>
                 <div class="collapse navbar-collapse" id="nav-menu">
                     <ul class="navbar-nav w-100 d-flex justify-content-end">
 
-                        <li class="nav-item"><a href="index.html" id="home-button" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#home-button" id="home-button" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#feature-section" class="nav-link">Features</a></li>
@@ -97,7 +98,7 @@
                 <div class="modal-body">
                     <ul class="navbar-nav w-100 d-flex justify-content-end">
 
-                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#home-button" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#feature-section" class="nav-link">Features</a></li>
@@ -887,10 +888,13 @@
 
     <!-- Smooth Behavior for Top Scroll -->
     <script>
-        document.querySelector('#up-button').addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.querySelectorAll('#up-button, #home-button').forEach(button => {
+            button.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         });
     </script>
+
 
 </body>
 
