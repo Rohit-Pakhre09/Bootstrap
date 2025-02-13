@@ -874,6 +874,12 @@
 
     </div>
 
+    <!-- Pre-Loader -->
+    <div class="preloaderBg" id="preloader" onload="preloader()">
+        <div class="preloader"></div>
+        <div class="preloader2"></div>
+    </div>
+
     <!-- Home Button -->
     <div class="d-flex justify-content-end bg-info">
         <div class="d-flex justify-content-center align-items-center" id="up-button">
@@ -893,6 +899,14 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
+
+        // Pre Loader Animation.
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#preloader").fadeOut("slow");
+            }, 500);
+        });
+
     </script>
 
 
