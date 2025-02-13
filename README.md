@@ -15,6 +15,12 @@
 <h3>Website Link </h3>
 <a href="https://admin-dashboard09.netlify.app/">https://admin-dashboard09.netlify.app//</a>
 
+<h1> e-Start Up Website </h1>
+<p> 
+  This website utilizes the responsive Bootstrap framework. To enhance user experience, the website incorporates subtle jQuery functionalities, such as smooth animations, dynamic content updates etc and most embedded css is used.
+</p> 
+<img src="">
+
 <h1> Starbucks </h1>
 
 <p> This website is used with Bootstrap framework and for a certain part media query is also used. </p>
