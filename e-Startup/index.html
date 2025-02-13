@@ -59,12 +59,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
-                <div id="home-button"></div>
                 <div class="collapse navbar-collapse" id="nav-menu">
                     <ul class="navbar-nav w-100 d-flex justify-content-end">
 
-                        <li class="nav-item"><a href="#home-button" id="home-button" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#hero-section" id="home-button" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#feature-section" class="nav-link">Features</a></li>
@@ -82,13 +80,14 @@
                     </ul>
 
                 </div>
+
             </div>
         </nav>
 
     </header>
 
     <!-- Modal -->
-    <div class="modal wow animate__animated animate__fadeIn" tabindex="-1" id="modal">
+    <div class="modal animate__animated animate__fadeIn" tabindex="-1" id="modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -98,7 +97,7 @@
                 <div class="modal-body">
                     <ul class="navbar-nav w-100 d-flex justify-content-end">
 
-                        <li class="nav-item"><a href="#home-button" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#hero-section" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#service-section" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#feature-section" class="nav-link">Features</a></li>
@@ -894,11 +893,10 @@
 
     <!-- Smooth Behavior for Top Scroll -->
     <script>
-        document.querySelectorAll('#up-button, #home-button').forEach(button => {
-            button.addEventListener('click', function () {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
+        document.querySelector('#up-button')?.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
 
         // Pre Loader Animation.
         $(window).on("load", function () {
