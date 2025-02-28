@@ -39,3 +39,26 @@
   This website utilizes the responsive Bootstrap framework. It is simple and basic webpage which has Navbar and Bootstrap Row and Column concept etc.  
 </p> 
 <img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/d6994f0a301e83a958e8c8d1bfb84aeaf3874813/Static%20Webpage/Assets/BootStrap%20Template.png">
+
+<h4>Bootstrap Exam</h4>
+
+<h1>Banner with carousel</h1>
+<img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/f66dd428d38135c180393f49f48114295e7effa1/Bootstrap_Exam/Banner%20with%20Carousel/Carousel%20Banner.png">
+<p>A fully responsive banner with a carousel, built using Bootstrap 5. This project showcases an elegant image slider with smooth transitions, navigation controls, and captions—perfect for modern websites</p>
+
+<h1>Blog Section with card</h1>
+<img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/f66dd428d38135c180393f49f48114295e7effa1/Bootstrap_Exam/Blog%20Section%20with%20Card/Blog%20Post.png">
+<p>A modern and responsive blog section built using Bootstrap 5. This project features an elegantly designed blog layout with cards, images, and a clean typography style, making it ideal for blogs, news websites, and personal portfolios.</p>
+
+<h1>Accordian FAQ</h1>
+<img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/f66dd428d38135c180393f49f48114295e7effa1/Bootstrap_Exam/FAQ%20with%20Accordian/Faq%20Accordian.png">
+<p>A clean and interactive FAQ section built using Bootstrap 5 Accordion. This component allows users to toggle answers with smooth animations, enhancing the user experience for help pages, support sections, and product FAQs.</p>
+
+<h1>Offcanvas Header</h1>
+<img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/f66dd428d38135c180393f49f48114295e7effa1/Bootstrap_Exam/Header%20with%20Offanvas/Offcanvas%20Header.png">
+<p>A modern and professional responsive header built using Bootstrap 5 Offcanvas. This component provides a seamless navigation experience, making it perfect for mobile-friendly websites and web apps.</p>
+
+<h1>Registration Form</h1>
+<img src="https://github.com/Rohit-Pakhre09/Bootstrap-Projects/blob/f66dd428d38135c180393f49f48114295e7effa1/Bootstrap_Exam/Registration%20Form/Registration%20Form.png">
+<p>A modern, elegant, and fully responsive User Registration Form built using Bootstrap 5. This form is designed with a clean UI, real-time validation captions, and a smooth user experience.</p>
+
